@@ -20,7 +20,7 @@ Este proyecto es puramente frontend y no requiere instalación de dependencias. 
 1. Clona o descarga el repositorio.
 2. Abre el archivo `HTML/Inicio.html` en tu navegador para acceder a la página de inicio de sesión.
 3. Credenciales de prueba:
-   - Usuario: admin@TomNet.com
+   - Usuario: luisa@TomNet.com
    - Contraseña: 1234
 4. Una vez logueado, serás redirigido a la página principal (`HTML/home.html`) donde puedes publicar y interactuar con posts.
 
