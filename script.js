@@ -11,7 +11,7 @@ if (loginForm) {
 
     if (email === "admin@TomNet.com" && password === "1234") {
       localStorage.setItem("auth", "true");
-      window.location.href = "home.html";
+      window.location.href = "/Primer_modulo/home.html";
     } else {
       alert("Correo o contraseña incorrectos");
     }
