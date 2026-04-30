@@ -11,7 +11,7 @@ if (loginForm) {
 
     if (email === "admin@TomNet.com" && password === "1234") {
       localStorage.setItem("auth", "true");
-      window.location.href = "/Primer_modulo/home.html";
+      window.location.href = "/Primer_Modulo/home.html";
     } else {
       alert("Correo o contraseña incorrectos");
     }
@@ -96,7 +96,6 @@ document.addEventListener("keypress", function (e) {
     const texto = input.value.trim();
     if (texto === "") return;
 
-    // 👇 avatar NUEVO por comentario
     const avatarUrl = `https://api.dicebear.com/9.x/pixel-art/svg?seed=${Math.random()}`;
 
     const lista = input.nextElementSibling;
@@ -116,4 +115,3 @@ document.addEventListener("keypress", function (e) {
     input.value = "";
   }
 });
-// Barra de iconos//
