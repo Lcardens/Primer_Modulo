@@ -1,0 +1,128 @@
+/* Fondo degradado */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #a4cfe397, #ffffff66);
+  font-family: "monospace", monospace;
+}
+/*logo*/
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+/* Tarjeta */
+.login-card {
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  border: none;
+}
+
+/* Título */
+h4 {
+  color: #110a8f;
+}
+
+/* Texto secundario */
+.text-muted {
+  color: #3a7fed !important;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #b4ddfe;
+}
+
+.form-control:focus {
+  border-color: #84cafc;
+  box-shadow: 0 0 0 0.2rem #84c6fc40;
+}
+
+/* Botón */
+.btn-primary {
+  background: linear-gradient(90deg, #1616d949, #3a9def83);
+  border: none;
+  border-radius: 10px;
+  color: #0a0360;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/*HOME*/
+.custom-navbar {
+  background-color: #ffffff;
+}
+
+.text-pink {
+  color: #2d0534;
+  font-size: 1.5rem;
+}
+
+.search-box {
+  width: 40%;
+}
+
+.search-box input {
+  border-radius: 50px;
+  border: none;
+  padding: 8px 15px;
+  background-color: #e9fbfe53;
+}
+
+.icons i {
+  font-size: 1.2rem;
+  color: #150998b8;
+  cursor: pointer;
+}
+
+.subheader {
+  background-color: #ede9fe;
+  padding: 8px;
+  color: #7c3aed;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.like-icon {
+  color: #9ca3af; /* gris */
+  transition: 0.3s;
+  border: none;
+}
+
+.like-btn.active .like-icon {
+  color: #e6a4b4; /* tu rosado */
+  border: none;
+}
+
+@media (max-width: 576px) {
+  #btnPublicar {
+    width: 100%;
+  }
+}
+
+/* Perfil */
+.online-dot {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #22c55e; /* verde */
+  border-radius: 50%;
+  border: 2px solid white;
+}

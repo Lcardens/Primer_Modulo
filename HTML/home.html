@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/Primer_Modulo/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <section>
+      <nav class="navbar custom-navbar px-4">
+        <img
+          src="/Primer_Modulo/Imagenes/Logo.png"
+          alt="Logo"
+          class="rounded-circle me-2"
+          width="40"
+          height="40"
+        />
+        <span class="navbar-brand fw-bold text-pink fs-6">Nikovski</span>
+        <form class="me-auto search-box">
+          <input type="search" class="form-control" placeholder=" Buscar..." />
+        </form>
+        <div class="icons d-flex align-items-center gap-3">
+          <i class="bi bi-house-heart-fill fs-4"></i>
+          <i class="bi bi-bell fs-4"></i>
+          <a href="/Primer_Modulo/HTML/perfil.html">
+          <i class="bi bi-person-fill fs-4"></i></a>
+          <a href="/Primer_Modulo/HTML/Inicio.html">
+          <i class="bi bi-box-arrow-right fs-4"></i></a>
+        </div>
+      </nav>
+    </section>
+    <main>
+      <!-- Contenido principal -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-6 col-lg-9">
+              <div class="p-4 rounded-4 shadow bg-white">
+                <!-- avatar + texto -->
+                <div class="d-flex align-items-center mb-3">
+                  <img
+                    src="https://api.dicebear.com/9.x/pixel-art/svg"
+                    class="rounded-circle me-2"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <label for="postContent" class="form-label fw-bold">
+                  ¿Qué estás pensando?
+                </label>
+
+                <textarea
+                  id="postContent"
+                  class="form-control mb-3"
+                  rows="3"
+                  placeholder="Comparte tus pensamientos..."
+                ></textarea>
+                <!-- Botones izquierda -->
+                <div class="d-flex gap-3 flex-wrap">
+                  <!-- Botón foto -->
+                  <label
+                    for="fileInput"
+                    class="btn btn d-flex align-items-center gap-2"
+                  >
+                    <i class="bi bi-postcard-heart-fill text-primary fs-4"></i>
+                    Foto
+                  </label>
+                  <input type="file" id="fileInput" hidden accept="image/*" />
+                  
+                  <!-- Botón sentimiento -->
+                  <button class="btn d-flex align-items-center gap-2">
+                    <i class="bi bi-emoji-smile-fill text-warning fs-4"></i>
+                    Sentimiento
+                  </button>
+                  <button id="btnPublicar" class="btn btn-primary ms-auto">
+                    Publicar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contenedor de publicaciones -->
+          <div class="row justify-content-center mt-1">
+            <div class="ol-12 col-md-6 col-lg-9">
+              <div id="postsContainer" class="mt-4"></div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Primer_Modulo/script.js"></script>
+  </body>
+</html>
