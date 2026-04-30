@@ -9,7 +9,7 @@ if (loginForm) {
     const email = document.querySelector("input[type='email']").value;
     const password = document.querySelector("input[type='password']").value;
 
-    if (email === "admin@TomNet.com" && password === "1234") {
+    if (email === "luisa@TomNet.com" && password === "1234") {
       localStorage.setItem("auth", "true");
       window.location.href = "/Primer_Modulo/home.html";
     } else {
