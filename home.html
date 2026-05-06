@@ -33,10 +33,8 @@
         <div class="icons d-flex align-items-center gap-3">
           <i class="bi bi-house-heart-fill fs-4"></i>
           <i class="bi bi-bell fs-4"></i>
-          <a href="perfil.html">
-          <i class="bi bi-person-fill fs-4"></i></a>
-          <a href="index.html">
-          <i class="bi bi-box-arrow-right fs-4"></i></a>
+          <a href="perfil.html"> <i class="bi bi-person-fill fs-4"></i></a>
+          <a href="index.html"> <i class="bi bi-box-arrow-right fs-4"></i></a>
         </div>
       </nav>
     </section>
@@ -45,12 +43,12 @@
       <section>
         <div class="container">
           <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-6 col-lg-9">
+            <div class="col-10 col-md-4 col-lg-7">
               <div class="p-4 rounded-4 shadow bg-white">
                 <!-- avatar + texto -->
                 <div class="d-flex align-items-center mb-3">
                   <img
-                    src="https://api.dicebear.com/9.x/pixel-art/svg"
+                    src="https://api.dicebear.com/9.x/pixel-art/svg?hair=long01&hairColor=28150a&mouth=happy06&skinColor=f5cfa0&seed=Robert"
                     class="rounded-circle me-2"
                     width="40"
                     height="40"
@@ -78,7 +76,7 @@
                     Foto
                   </label>
                   <input type="file" id="fileInput" hidden accept="image/*" />
-                  
+
                   <!-- Botón sentimiento -->
                   <button class="btn d-flex align-items-center gap-2">
                     <i class="bi bi-emoji-smile-fill text-warning fs-4"></i>
@@ -91,12 +89,123 @@
               </div>
             </div>
           </div>
-          <!-- Contenedor de publicaciones -->
-          <div class="row justify-content-center mt-1">
-            <div class="ol-12 col-md-6 col-lg-9">
-              <div id="postsContainer" class="mt-4"></div>
-            </div>
+          <!-- Contenedor de publicaciones -->        
+            <div class="row justify-content-center mt-4">
+              <div class="col-10 col-md-4 col-lg-7">
+                <div id="postsContainer" class="mt-4">
+      
+                    <!--  Ejemplo 1 -->
+                      <div class="post p-3 mb-3 rounded-4 shadow bg-white">
+                        <div class="d-flex align-items-center mb-3">
+                          <img 
+                            src="https://api.dicebear.com/9.x/pixel-art/svg?hair=short13&hairColor=28150a&skinColor=ffdbac&seed=Alexander"
+                            class="rounded-circle me-2"
+                            width="40"
+                            height="40"
+                          />
+                          <strong>Cristian</strong>
+                        </div>
+
+                        <p class="mb-3">Explorando el mundo</p>
+
+                        <img 
+                          src="Toronto.jpg"
+                          class="img-fluid rounded-4 w-50 mb-2 post-img"
+                          alt="Publicación"
+                        >
+
+                        <div class="d-flex justify-content-around border-top pt-2">
+
+                          <!-- LIKE -->
+                          <button class="btn icon-btn like-btn">
+                            <i class="bi bi-balloon-heart-fill like-icon fs-5"></i>
+                          </button>
+
+                          <!-- COMMENT -->
+                          <button class="btn comment-btn">
+                            <i class="bi bi-chat-heart-fill fs-5 text-secondary"></i>
+                          </button>
+
+                          <!-- SHARE -->
+                          <button class="btn">
+                           <i class="bi bi-send fs-5 text-secondary"></i>
+                          </button>
+
+                        </div>
+
+                        <!-- SECCIÓN DE COMENTARIOS -->
+                        <div class="comment-section mt-3 d-none">
+                          <input 
+                            type="text" 
+                            class="form-control comment-input" 
+                            placeholder="Escribe un comentario..."
+                          >
+
+                          <div class="comments-list mt-2"></div>
+                        </div>
+
+                      </div>
+                    
+
+                    <!-- Ejemplo 2 -->
+                    <div class="post p-3 mb-3 rounded-4 shadow bg-white">
+                        <div class="d-flex align-items-center mb-3">
+                          <img 
+                            src="https://api.dicebear.com/9.x/pixel-art/svg?hair=long03&hairColor=28150a&skinColor=ffdbac&seed=Sarah"
+                            class="rounded-circle me-2"
+                            width="40px"
+                            height="40px"
+                          />
+                          <strong>Helena</strong>
+                        </div>
+
+                        <p class="mb-3">Aprendiendo</p>
+
+                        <img 
+                          src="Lab.jpg"
+                          class="img-fluid rounded-4 w-50 mb-2 post-img"
+                          alt="Publicación"
+                        >
+
+                        <div class="d-flex justify-content-around border-top pt-2">
+
+                          <!-- LIKE -->
+                          <button class="btn icon-btn like-btn">
+                            <i class="bi bi-balloon-heart-fill like-icon fs-5"></i>
+                          </button>
+
+                          <!-- COMMENT -->
+                          <button class="btn comment-btn">
+                            <i class="bi bi-chat-heart-fill fs-5 text-secondary"></i>
+                          </button>
+
+                          <!-- SHARE -->
+                          <button class="btn">
+                            <i class="bi bi-send fs-5 text-secondary"></i>
+                          </button>
+
+                        </div>
+
+                        <!-- SECCIÓN DE COMENTARIOS -->
+                        <div class="comment-section mt-3 d-none">
+                          <input 
+                            type="text" 
+                            class="form-control comment-input" 
+                            placeholder="Escribe un comentario..."
+                          >
+
+                          <div class="comments-list mt-2"></div>
+                        </div>
+
+                      </div>
+                    
+                      </div>                      
+
+        <div class="row justify-content-center mt-1">
+          <div class="col-12 col-md-6 col-lg-9">
+            <div id="postsContainer" class="mt-4"></div>
           </div>
+        </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

@@ -40,8 +40,10 @@ if (btnPublicar) {
 
     post.innerHTML = `
       <div class="d-flex align-items-center mb-3">
-        <img src="${avatarUrl}" class="rounded-circle me-2" width="40" height="40"/>
+        <img src="https://api.dicebear.com/9.x/pixel-art/svg?hair=long01&hairColor=28150a&mouth=happy06&skinColor=f5cfa0&seed=Robert" class="rounded-circle me-2" width="40" height="40"/>
+         <strong>Luisa</strong>
       </div>
+     
       <!-- Aqui se aguarda loq ue se publica -->
       <p class="mb-3">${contenido}</p>
 
@@ -57,7 +59,7 @@ if (btnPublicar) {
         </button>
 
         <button class="btn">
-          <i class="bi bi-share fs-5" style="color:grey"></i>
+          <i class="bi bi-send fs-5 text-secondary"></i>
         </button>
 
       </div>

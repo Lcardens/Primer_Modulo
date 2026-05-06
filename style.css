@@ -1,9 +1,9 @@
 /* Fondo degradado */
 body {
   margin: 0;
-  height: 100vh;
-  background: linear-gradient(135deg, #a4cfe397, #ffffff66);
-  font-family: "monospace", monospace;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a4cfe3, #ffffff);
+  font-family: monospace;
 }
 /*logo*/
 
